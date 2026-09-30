@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Abroad for Pakistani Students</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Study<span>Abroad</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#countries">Countries</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-heading">
+                YOUR JOURNEY STARTS HERE
+            </p>
+
+            <h1>
+                Study Abroad for
+                <span>Pakistani Students</span>
+            </h1>
+
+            <p>
+                Explore popular countries, study requirements,
+                estimated budgets and useful information
+                before starting your journey.
+            </p>
+
+            <a href="#countries" class="main-btn">
+                Explore Countries
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Countries Section -->
+
+    <section id="countries" class="countries-section">
+
+        <div class="section-title">
+
+            <p>EXPLORE YOUR OPTIONS</p>
+
+            <h2>
+                Popular Study Destinations
+            </h2>
+
+            <span>
+                Find useful information about popular countries
+                for Pakistani students.
+            </span>
+
+        </div>
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search country..."
+            >
+
+        </div>
+
+
+        <div class="country-container">
+
+
+            <!-- UK -->
+
+            <div class="country-card">
+
+                <img
+                    src="https://flagcdn.com/w320/gb.png"
+                    class="flag"
+                    alt="UK Flag"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80"
+                    class="country-image"
+                    alt="London"
+                >
+
+                <div class="country-info">
+
+                    <h3>United Kingdom 🇬🇧</h3>
+
+                    <p>
+                        Famous place: London
+                    </p>
+
+                    <p class="budget">
+                        💰 Max Budget: £35,000 / year
+                    </p>
+
+                    <button onclick="showCountry('uk')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Canada -->
+
+            <div class="country-card">
+
+                <img
+                    src="https://flagcdn.com/w320/ca.png"
+                    class="flag"
+                    alt="Canada Flag"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=800&q=80"
+                    class="country-image"
+                    alt="Canada"
+                >
+
+                <div class="country-info">
+
+                    <h3>Canada 🇨🇦</h3>
+
+                    <p>
+                        Famous place: Toronto
+                    </p>
+
+                    <p class="budget">
+                        💰 Max Budget: CAD 40,000 / year
+                    </p>
+
+                    <button onclick="showCountry('canada')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Australia -->
+
+            <div class="country-card">
+
+                <img
+                    src="https://flagcdn.com/w320/au.png"
+                    class="flag"
+                    alt="Australia Flag"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d1?auto=format&fit=crop&w=800&q=80"
+                    class="country-image"
+                    alt="Sydney"
+                >
+
+                <div class="country-info">
+
+                    <h3>Australia 🇦🇺</h3>
+
+                    <p>
+                        Famous place: Sydney
+                    </p>
+
+                    <p class="budget">
+                        💰 Max Budget: AUD 45,000 / year
+                    </p>
+
+                    <button onclick="showCountry('australia')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Germany -->
+
+            <div class="country-card">
+
+                <img
+                    src="https://flagcdn.com/w320/de.png"
+                    class="flag"
+                    alt="Germany Flag"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800&q=80"
+                    class="country-image"
+                    alt="Germany"
+                >
+
+                <div class="country-info">
+
+                    <h3>Germany 🇩🇪</h3>
+
+                    <p>
+                        Famous place: Berlin
+                    </p>
+
+                    <p class="budget">
+                        💰 Max Budget: €20,000 / year
+                    </p>
+
+                    <button onclick="showCountry('germany')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- USA -->
+
+            <div class="country-card">
+
+                <img
+                    src="https://flagcdn.com/w320/us.png"
+                    class="flag"
+                    alt="USA Flag"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=800&q=80"
+                    class="country-image"
+                    alt="New York"
+                >
+
+                <div class="country-info">
+
+                    <h3>United States 🇺🇸</h3>
+
+                    <p>
+                        Famous place: New York
+                    </p>
+
+                    <p class="budget">
+                        💰 Max Budget: $50,000 / year
+                    </p>
+
+                    <button onclick="showCountry('usa')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Turkey -->
+
+            <div class="country-card">
+
+                <img
+                    src="https://flagcdn.com/w320/tr.png"
+                    class="flag"
+                    alt="Turkey Flag"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80"
+                    class="country-image"
+                    alt="Istanbul"
+                >
+
+                <div class="country-info">
+
+                    <h3>Turkey 🇹🇷</h3>
+
+                    <p>
+                        Famous place: Istanbul
+                    </p>
+
+                    <p class="budget">
+                        💰 Max Budget: $15,000 / year
+                    </p>
+
+                    <button onclick="showCountry('turkey')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Malaysia -->
+
+            <div class="country-card">
+
+                <img
+                    src="https://flagcdn.com/w320/my.png"
+                    class="flag"
+                    alt="Malaysia Flag"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80"
+                    class="country-image"
+                    alt="Malaysia"
+                >
+
+                <div class="country-info">
+
+                    <h3>Malaysia 🇲🇾</h3>
+
+                    <p>
+                        Famous place: Kuala Lumpur
+                    </p>
+
+                    <p class="budget">
+                        💰 Max Budget: $12,000 / year
+                    </p>
+
+                    <button onclick="showCountry('malaysia')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Blog Section -->
+
+    <section id="blog" class="blog-section">
+
+        <div class="section-title">
+
+            <p>OUR BLOG</p>
+
+            <h2>
+                Helpful Study Abroad Tips
+            </h2>
+
+        </div>
+
+
+        <div class="blog-container">
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+                    🎓
+                </div>
+
+                <h3>
+                    How to Choose a Country?
+                </h3>
+
+                <p>
+                    Compare tuition fees, living costs,
+                    education quality and available programs
+                    before choosing your destination.
+                </p>
+
+                <a href="#">
+                    Read More →
+                </a>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+                    📄
+                </div>
+
+                <h3>
+                    Documents You May Need
+                </h3>
+
+                <p>
+                    Learn about common documents such as
+                    passport, academic certificates,
+                    financial proof and English test results.
+                </p>
+
+                <a href="#">
+                    Read More →
+                </a>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+                    💰
+                </div>
+
+                <h3>
+                    How to Plan Your Budget?
+                </h3>
+
+                <p>
+                    Learn how tuition fees, accommodation,
+                    food, transport and other expenses
+                    can affect your study budget.
+                </p>
+
+                <a href="#">
+                    Read More →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <div>
+
+                <p class="section-small">
+                    ABOUT US
+                </p>
+
+                <h2>
+                    Making Study Abroad Information Easy
+                </h2>
+
+            </div>
+
+            <p>
+                Study Abroad for Pakistani Students is a
+                simple information website designed to help
+                students understand popular study destinations.
+                We provide general information about countries,
+                estimated budgets, basic requirements and
+                documents.
+            </p>
+
+            <p>
+                Our goal is to make complicated information
+                easier to understand for students and families.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    
+    <!-- Privacy Policy -->
+
+    <section id="privacy" class="privacy-section">
+
+        <div class="section-title">
+
+            <p>YOUR PRIVACY</p>
+
+            <h2>
+                Privacy Policy
+            </h2>
+
+        </div>
+
+        <div class="privacy-box">
+
+            <p>
+                We respect the privacy of our visitors.
+                This website is created for educational
+                and informational purposes.
+            </p>
+
+            <p>
+                We do not intentionally collect sensitive
+                personal information from visitors.
+            </p>
+
+            <p>
+                Information submitted through the contact
+                form should only be used for communication
+                purposes.
+            </p>
+
+            <p>
+                Country information, fees and requirements
+                may change. Students should always confirm
+                current requirements from official sources
+                before applying.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+                Study<span>Abroad</span>
+            </h2>
+
+            <p>
+                Helping Pakistani students understand
+                study abroad options.
+            </p>
+
+            <p class="copyright">
+                © 2026 Study Abroad for Pakistani Students.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Country Details Popup -->
+
+    <div id="countryModal" class="modal">
+
+        <div class="modal-content">
+
+            <span
+                class="close"
+                onclick="closeModal()"
+            >
+                &times;
+            </span>
+
+            <div id="countryDetails"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
